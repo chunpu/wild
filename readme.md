@@ -1,6 +1,7 @@
 wild
 ===
 
+[![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][downloads-url]
 [![Dependency Status][david-image]][david-url]
@@ -47,5 +48,7 @@ License
 
 [![License][license-image]][license-url]
 
+[travis-image]: https://img.shields.io/travis/chunpu/wild.svg?style=flat-square
+[travis-url]: https://travis-ci.org/chunpu/wild
 [license-image]: http://img.shields.io/npm/l/wild.svg?style=flat-square
 [license-url]: #
