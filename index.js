@@ -2,9 +2,12 @@ module.exports = wild
 
 var specialBytes = '\\.+?()|[]{}^$'
 
-function wild(str) {
+function wild(str, isStrict) {
 	str = QuoteMeta(str)
 	str = str.replace('*', '.*')
+	if (isStrict) {
+		str = '^' + str + '$'
+	}
 	return new RegExp(str)
 }
 
