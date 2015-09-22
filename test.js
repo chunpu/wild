@@ -14,4 +14,7 @@ var strictReg = wild('http://google.com/*', true)
 assert(strictReg.test('http://google.com/'))
 assert(!strictReg.test('foo http://google.com/foo bar'))
 
+var raw = wild.source('http://google.com/*')
+assert.deepEqual(raw, 'http://google\\.com/.*')
+
 console.log('tests pass')

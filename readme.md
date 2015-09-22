@@ -44,6 +44,21 @@ reg.test('http://google.com/foo')
 // => true
 ```
 
+Advanced
+---
+
+get source by `wild.source`
+
+```js
+wild.source('http://google.com/*')
+// => 'http://google\\.com/.*'
+
+// different with raw source
+
+wild('http://google.com/*').source
+// => 'http:\/\/google\.com\/.*'
+```
+
 License
 ---
 
